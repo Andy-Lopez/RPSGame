@@ -6,13 +6,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rock Paper Scissors</title>
     <link rel="stylesheet" href="./styles.css">
+    <script src="script.js"></script>
+
 </head>
 <body>
     <h1>Choose your weapon</h1>
     <div class="gameMoves">
-        <div class="move">Rock</div>
-        <div class="move">Paper</div>
-        <div class="move">Scissors</div>
+        <div class="move">
+            <button id="0" onclick="playerPlay(this)" >Rock</button>
+        </div>
+        <div class="move">
+            <button id="1" onclick="playerPlay(this)" >Paper</button>
+        </div>
+        <div class="move">
+            <button id="2" onclick="playerPlay(this)">Scissors</button>
+        </div>
+    </div>
+    <div>
+        <h1 id="playerScoreText">0</h1>
+        <h1 id="computerScoreText">0</h1>
     </div>
 </body>
 </html>
